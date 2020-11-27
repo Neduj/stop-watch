@@ -1,0 +1,13 @@
+@import "./mixins/flex.mixin";
+
+.display {
+  @include flex-center;
+
+  &__title {
+    @include flex-center;
+  }
+
+  &__content {
+    @include flex-center;
+  }
+}

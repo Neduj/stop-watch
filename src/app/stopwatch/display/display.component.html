@@ -1,0 +1,30 @@
+<div>
+  <div class="display">
+    <mat-card>
+      <mat-card-title>
+        <div class="display__title">Stopwacth</div>
+      </mat-card-title>
+      <mat-card-content>
+        <mat-card>
+          <mat-card-content>
+            <div class="display__content">
+              {{ stopwatch.hours }} : {{ stopwatch.minutes }} :
+              {{ stopwatch.seconds }}
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-card-content>
+      <mat-card-actions>
+        <div>
+          <button (click)="startStop()" mat-button color="accent">
+            Start / Stop
+          </button>
+          <button class="wait" (click)="wait()" mat-button color="primary">
+            Wait
+          </button>
+          <button (click)="reset()" mat-button color="warn">Reset</button>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
